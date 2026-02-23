@@ -41,6 +41,25 @@ numbers is sorted in non-decreasing order.
 -1000 <= target <= 1000
  */
 
+
+//Intuition
+/*Because the array is sorted, we can use:
+
+👉 Two Pointer Technique
+
+Start one pointer at the beginning (left = 0)
+
+Start another pointer at the end (right = n-1)
+
+Then:
+
+If sum < target → move left++ (we need a bigger number)
+
+If sum > target → move right-- (we need a smaller number)
+
+If sum == target → return indices*/
+
+
 public class TwoSumProblemWithSortedArray {
 
 	public static void main(String[] args) {
